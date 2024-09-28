@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Quantico", sans-serif !important;
+    background-image: url('images/bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: #FFE5B4 !important;
+    border: 1px solid #664c36 !important;
+    border-radius: 16px !important;
+    width: 100%;
+    max-width: 500px;
+}
+
+.btn-container {
+    flex-wrap: wrap;
+}
+
+.btn {
+    margin: 10px;
+    font-size: 18px !important;
+    flex: 1 1 auto;
+}
+
+.digit {
+    font-size: 50px;
+    margin-right: 5px;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+    .digit {
+        font-size: 45px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    .digit {
+        font-size: 35px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .digit {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px !important;
+    }
+
+    .time {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
